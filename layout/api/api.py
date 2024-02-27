@@ -48,7 +48,7 @@ class SearchResult(ApiBlaze):
     def __init__(self, page, game) -> None:
         super().__init__(page, game)
 
-    def search(self, pages: tuple | None = None) -> Any:
+    def search(self, pages=None) -> Any:
         list_results = []
         if pages:
             for i in range(pages[0], pages[1]):
