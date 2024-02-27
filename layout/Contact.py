@@ -1,6 +1,6 @@
 import flet as f
 from layout.colors import ColorsApp
-from supabase import  Client
+from supabase import Client
 from layout.appMenu import MenuApp
 from layout.actions_buttons import ActionsMenu
 

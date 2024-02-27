@@ -1,11 +1,6 @@
 from typing import Any, Dict, List
 
 import flet as f
-# import pendulum as dtp
-from layout.actions_buttons import ActionsMenu
-# from login import User
-from layout.api.api import GetResult
-from layout.appMenu import MenuApp
 # from colors import ColorsApp
 from flet import (AlertDialog, BoxShadow, ButtonStyle, Card, Column, Container,
                   CrossAxisAlignment, FontWeight, IconButton, Image, ImageFit,
@@ -13,6 +8,11 @@ from flet import (AlertDialog, BoxShadow, ButtonStyle, Card, Column, Container,
                   PieChartSection, ResponsiveRow, Row, Text, TextButton,
                   TextField, TextStyle, View, alignment, border, border_radius,
                   colors, icons, margin, padding)
+# import pendulum as dtp
+from layout.actions_buttons import ActionsMenu
+# from login import User
+from layout.api.api import GetResult
+from layout.appMenu import MenuApp
 from supabase import Client
 
 # colors to app
@@ -272,12 +272,12 @@ class Home(View):
                             height=220,
                         ),
                         Text(
-                            value=f"Name: {bot["name"]}",
+                            value=f"Name: {bot['name']}",
                             size=20,
                             weight="bold",
                         ),
                         Text(
-                            value=str(bot["game"]).replace(
+                            value=str(bot['game']).replace(
                                 "_", " "
                             ).capitalize(),
                             size=15,
